@@ -27,6 +27,7 @@
 .header__search input {
   border: none;
   outline: 0;
+  padding: 5px 10px;
   background: transparent;
   min-width: 200px;
 }

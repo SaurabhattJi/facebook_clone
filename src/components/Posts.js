@@ -21,15 +21,15 @@ const Posts = () => {
       </div>
       <div className="post__second">
         <div className="post__option">
-          <VideoCallIcon style={{ color: "red" }} />
+          <VideoCallIcon style={{ color: "red" }} fontSize="large" />
           <p>Live Video</p>
         </div>
         <div className="post__option">
-          <AddToPhotosIcon style={{ color: "lightgreen" }} />
+          <AddToPhotosIcon style={{ color: "#00A400" }} fontSize="large" />
           <p>Photo/Video</p>
         </div>
         <div className="post__option">
-          <EmojiEmotionsIcon style={{ color: "#ffb100" }} />
+          <EmojiEmotionsIcon style={{ color: "#ffb100" }} fontSize="large" />
           <p>Feeling/Activity</p>
         </div>
       </div>
