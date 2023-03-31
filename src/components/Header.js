@@ -5,11 +5,12 @@ import { AiOutlineHome } from "react-icons/ai";
 import { MdOndemandVideo } from "react-icons/md";
 import { HiUserGroup } from "react-icons/hi";
 import { MdOutlineSportsEsports } from "react-icons/md";
-import { RxAvatar } from "react-icons/rx";
 import { AiFillAppstore } from "react-icons/ai";
 import { BiMessageDots } from "react-icons/bi";
 import { IoIosNotifications } from "react-icons/io";
 import { IoMdArrowDropdownCircle } from "react-icons/io";
+import { Avatar } from "@mui/material";
+import { BsShop } from "react-icons/bs";
 
 const Header = () => {
   return (
@@ -32,6 +33,9 @@ const Header = () => {
           <MdOndemandVideo />
         </div>
         <div className="header__option">
+          <BsShop />
+        </div>
+        <div className="header__option">
           <HiUserGroup />
         </div>
         <div className="header__option">
@@ -40,10 +44,8 @@ const Header = () => {
       </div>
       <div className="header__right">
         <div className="header__info">
-          <span>
-            <RxAvatar />
-          </span>
-          <h4>Saurabh Bhatt</h4>
+          <Avatar src="https://yt3.ggpht.com/mScHxoIcIqbmM7tw3AxCtWRFfMexLTqlux7KBrMh6igywT9kd_thm7cHXvxQyZHfvgjcO3l6Ew=s108-c-k-c0x00ffffff-no-rj" />
+          <h5>Saurabh Bhatt</h5>
         </div>
         <div className="icon">
           <AiFillAppstore />

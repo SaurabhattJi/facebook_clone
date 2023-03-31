@@ -74,10 +74,13 @@
 .header__info {
   display: flex;
   align-items: center;
-  padding: 5px 40px;
+  padding: 5px 20px;
 }
 .header__info h5 {
-  margin-right: 20px;
+  margin-right: 10px;
+}
+.header__info .MuiAvatar-root {
+  margin-right: 5px;
 }
 .header__info span {
   display: flex;

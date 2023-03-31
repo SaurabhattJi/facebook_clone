@@ -18,3 +18,9 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+.app__body {
+  display: flex;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
