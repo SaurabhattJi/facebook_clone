@@ -1,0 +1,31 @@
+.storyReel {
+  display: flex;
+}
+.story {
+  position: relative;
+  cursor: pointer;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 120px;
+  height: 200px;
+  box-shadow: 0 5px 17px -7px rgb(0, 0, 0, 0.75);
+  margin: 0 5px;
+  transition: all 0.2 linear 0s;
+  border-radius: 10px;
+}
+.story:hover {
+  transform: scale(1.05);
+}
+.story .MuiAvatar-root {
+  margin: 10px;
+  border: 2px solid #2381fa;
+}
+.story h4 {
+  color: #fff;
+  font-size: 13px;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  font-weight: normal;
+}

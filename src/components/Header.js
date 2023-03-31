@@ -5,8 +5,8 @@ import { AiOutlineHome } from "react-icons/ai";
 import { MdOndemandVideo } from "react-icons/md";
 import { HiUserGroup } from "react-icons/hi";
 import { MdOutlineSportsEsports } from "react-icons/md";
-import { AiFillAppstore } from "react-icons/ai";
-import { BiMessageDots } from "react-icons/bi";
+import { TbGridDots } from "react-icons/tb";
+import { BsMessenger } from "react-icons/bs";
 import { IoIosNotifications } from "react-icons/io";
 import { IoMdArrowDropdownCircle } from "react-icons/io";
 import { Avatar } from "@mui/material";
@@ -43,21 +43,21 @@ const Header = () => {
         </div>
       </div>
       <div className="header__right">
-        <div className="header__info">
-          <Avatar src="https://yt3.ggpht.com/mScHxoIcIqbmM7tw3AxCtWRFfMexLTqlux7KBrMh6igywT9kd_thm7cHXvxQyZHfvgjcO3l6Ew=s108-c-k-c0x00ffffff-no-rj" />
-          <h5>Saurabh Bhatt</h5>
+        <div className="icon">
+          <TbGridDots />
         </div>
         <div className="icon">
-          <AiFillAppstore />
-        </div>
-        <div className="icon">
-          <BiMessageDots />
+          <BsMessenger />
         </div>
         <div className="icon">
           <IoIosNotifications />
         </div>
         <div className="icon">
           <IoMdArrowDropdownCircle />
+        </div>
+        <div className="header__info">
+          <Avatar src="https://yt3.ggpht.com/mScHxoIcIqbmM7tw3AxCtWRFfMexLTqlux7KBrMh6igywT9kd_thm7cHXvxQyZHfvgjcO3l6Ew=s108-c-k-c0x00ffffff-no-rj" />
+          <h5>Saurabh Bhatt</h5>
         </div>
       </div>
     </div>
