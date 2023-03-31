@@ -1,5 +1,6 @@
 import Feed from "./components/Feed";
 import Header from "./components/Header";
+import RightSideBar from "./components/RightSideBar";
 import Sidebar from "./components/Sidebar";
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
       <div className="app__body">
         <Sidebar />
         <Feed />
+        <RightSideBar />
       </div>
     </div>
   );

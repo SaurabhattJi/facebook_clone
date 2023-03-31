@@ -1,0 +1,47 @@
+.post {
+  display: flex;
+  box-sizing: border-box;
+  margin-top: 30px;
+  background-color: #fff;
+  width: 100%;
+  padding: 15px;
+  border-radius: 10px;
+  flex-direction: column;
+  box-shadow: 4px 2px 10px #ccc;
+}
+.post__first {
+  display: flex;
+  flex: 1;
+  align-items: center;
+}
+.post__first form {
+  background-color: whitesmoke;
+  padding: 10px;
+  border-radius: 20px;
+  margin-left: 10px;
+  flex: 1;
+}
+.post__first form input {
+  border: none;
+  outline: none;
+  width: 100%;
+  background: transparent;
+}
+.post__second {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid lightgray;
+  margin-top: 15px;
+}
+.post__option {
+  display: flex;
+  align-items: center;
+  padding: 5px 20px;
+  border-radius: 20px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.post__option:hover {
+  background-color: whitesmoke;
+}

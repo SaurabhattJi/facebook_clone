@@ -1,5 +1,6 @@
 .storyReel {
   display: flex;
+  /* margin-top: 30px; */
 }
 .story {
   position: relative;
@@ -15,7 +16,7 @@
   border-radius: 10px;
 }
 .story:hover {
-  transform: scale(1.05);
+  transform: scale(1.03);
 }
 .story .MuiAvatar-root {
   margin: 10px;
