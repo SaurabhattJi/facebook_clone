@@ -20,12 +20,14 @@
   border-radius: 20px;
   margin-left: 10px;
   flex: 1;
+  cursor: pointer;
 }
 .post__first form input {
   border: none;
   outline: none;
   width: 100%;
   background: transparent;
+  cursor: pointer;
 }
 .post__second {
   display: flex;
