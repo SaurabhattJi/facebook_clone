@@ -1,7 +1,38 @@
-.widget {
+.right {
   margin-top: 30px;
   margin-right: 10px;
   height: 100vh;
   position: sticky;
   top: 0;
+  flex: 0.33;
+}
+.right__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.right__body__options {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.right__body__options h4 {
+  margin-left: 10px;
+  font-size: 14px;
+}
+.icon {
+  margin-left: 10px;
+}
+.icon p {
+  font-size: 12px;
+  color: gray;
+}
+.icon svg {
+  font-size: 16px;
+  margin-right: 10px;
+}
+.right__header__right svg {
+  margin: 0 10px;
 }

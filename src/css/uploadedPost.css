@@ -1,0 +1,50 @@
+.upload {
+  background-color: #fff;
+  border-radius: 10px;
+  margin-top: 20px;
+  padding: 10px;
+}
+.upload__top {
+  display: flex;
+  justify-content: space-between;
+}
+.upload__top svg {
+  cursor: pointer;
+}
+.upload__topLeft {
+  display: flex;
+  align-items: center;
+}
+.uploadInfo {
+  margin-left: 10px;
+}
+.uploadInfo p {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+}
+.uploadInfo p svg {
+  margin-left: 10px;
+  font-size: 12px;
+}
+.upload__middle p {
+  margin: 20px 0;
+}
+.upload__middle img {
+  width: 100%;
+}
+.upload__bottom {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid lightgray;
+  margin-top: 10px;
+  padding-top: 10px;
+}
+.upload__bottom__options {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.upload__bottom__options p {
+  margin-left: 10px;
+}
