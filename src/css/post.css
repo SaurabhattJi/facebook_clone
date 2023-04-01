@@ -104,6 +104,7 @@
   border: 0;
   outline: 0;
   padding: 10px 0;
+  border-radius: 10px;
   text-transform: uppercase;
   letter-spacing: 2px;
   cursor: pointer;

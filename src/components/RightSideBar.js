@@ -6,6 +6,8 @@ import NotificationsActiveIcon from "@mui/icons-material/NotificationsActive";
 import VolumeUpIcon from "@mui/icons-material/VolumeUp";
 import VideoCallIcon from "@mui/icons-material/VideoCall";
 import SearchIcon from "@mui/icons-material/Search";
+import SidebarOptions from "./SidebarOptions";
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
 const RightSideBar = () => {
   return (
@@ -59,13 +61,10 @@ const RightSideBar = () => {
           <h4>Dinesh Sanwal</h4>
         </div>
         <div className="right__body__options ">
-          <Avatar src="https://i.pinimg.com/236x/9a/bd/46/9abd46666da62bb93a2a02a40814c3ff.jpg" />
-          <h4>Madhur Sanwal</h4>
-        </div>
-        <div className="right__body__options ">
           <Avatar src="https://burst.shopifycdn.com/photos/dark-haired-man-in-brown-leather-jacket.jpg?width=1200&format=pjpg&exif=1&iptc=1" />
           <h4>Gaurav</h4>
         </div>
+        <SidebarOptions Icon={ExpandMoreIcon} title="See more" />
       </div>
     </div>
   );
