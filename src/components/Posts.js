@@ -2,7 +2,7 @@ import { Avatar, IconButton, Modal } from "@mui/material";
 import React, { useState } from "react";
 import "../css/post.css";
 import VideoCallIcon from "@mui/icons-material/VideoCall";
-import AddToPhotosIcon from "@mui/icons-material/AddToPhotos";
+// import AddToPhotosIcon from "@mui/icons-material/AddToPhotos";
 import EmojiEmotionsIcon from "@mui/icons-material/EmojiEmotions";
 import CloseIcon from "@mui/icons-material/Close";
 import PhotoLibraryIcon from "@mui/icons-material/PhotoLibrary";
@@ -83,7 +83,10 @@ const Posts = () => {
             <p>Live Video</p>
           </div>
           <div className="post__option">
-            <AddToPhotosIcon style={{ color: "lightgreen" }} fontSize="large" />
+            <PhotoLibraryIcon
+              fontSize="large"
+              style={{ color: "lightgreen" }}
+            />
             <p>Photo/Video</p>
           </div>
           <div className="post__option">

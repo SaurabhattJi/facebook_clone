@@ -3,7 +3,7 @@ import "../css/right.css";
 import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
 import { Avatar } from "@mui/material";
 import NotificationsActiveIcon from "@mui/icons-material/NotificationsActive";
-import VolumeUpIcon from "@mui/icons-material/VolumeUp";
+import CurrencyRupeeIcon from "@mui/icons-material/CurrencyRupee";
 import VideoCallIcon from "@mui/icons-material/VideoCall";
 import SearchIcon from "@mui/icons-material/Search";
 import SidebarOptions from "./SidebarOptions";
@@ -32,7 +32,7 @@ const RightSideBar = () => {
           <p>1 Notification</p>
         </div>
         <div className="right__body__options icon">
-          <VolumeUpIcon />
+          <CurrencyRupeeIcon />
           <p>Create Promotion</p>
         </div>
       </div>
