@@ -29,7 +29,7 @@ const RightSideBar = () => {
         </div>
         <div className="right__body__options icon">
           <NotificationsActiveIcon />
-          <p>1 Notification</p>
+          <p>24 Notification</p>
         </div>
         <div className="right__body__options icon">
           <CurrencyRupeeIcon />

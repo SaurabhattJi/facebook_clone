@@ -35,7 +35,7 @@ const Posts = () => {
             <div className="modal__body">
               <textarea
                 rows="5"
-                placeholder="What's on your mind Saurabh ?"
+                placeholder="What's on your mind, Saurabh ?"
               ></textarea>
             </div>
             <div className="modal__footer">
