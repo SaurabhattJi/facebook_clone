@@ -1,10 +1,14 @@
 import React, { useState } from "react";
 import "../css/sharedropdown.css";
-import BookmarkBorderIcon from "@mui/icons-material/BookmarkBorder";
+
 import { IconButton } from "@mui/material";
 import ShareIcon from "@mui/icons-material/Share";
-import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import ImportContactsIcon from "@mui/icons-material/ImportContacts";
+import { BsMessenger } from "react-icons/bs";
+import LoupeIcon from "@mui/icons-material/Loupe";
+import FlagIcon from "@mui/icons-material/Flag";
+import GroupsIcon from "@mui/icons-material/Groups";
+import NoteAltIcon from "@mui/icons-material/NoteAlt";
 
 const Dropdown = () => {
   const [active, setActive] = useState(false);
@@ -23,10 +27,10 @@ const Dropdown = () => {
       {active && (
         <div className="share_dropdown_content">
           <div className="share_dropdown_item">
-            <IconButton style={{ color: "green" }}>
-              <WhatsAppIcon />
+            <IconButton style={{ color: "black" }}>
+              <NoteAltIcon />
             </IconButton>
-            Share on whatsapp
+            Share to Feed
           </div>
           <div className="share_dropdown_item">
             <IconButton style={{ color: "black" }}>
@@ -36,9 +40,27 @@ const Dropdown = () => {
           </div>
           <div className="share_dropdown_item">
             <IconButton style={{ color: "black" }}>
-              <BookmarkBorderIcon />
+              <FlagIcon />
             </IconButton>
-            Favourites
+            Share to page
+          </div>
+          <div className="share_dropdown_item">
+            <IconButton style={{ color: "black" }}>
+              <LoupeIcon />
+            </IconButton>
+            Share to your story(friends)
+          </div>
+          <div className="share_dropdown_item">
+            <IconButton style={{ color: "black" }}>
+              <BsMessenger />
+            </IconButton>
+            Send in Messanger
+          </div>
+          <div className="share_dropdown_item">
+            <IconButton style={{ color: "black" }}>
+              <GroupsIcon />
+            </IconButton>
+            Share to a group
           </div>
         </div>
       )}

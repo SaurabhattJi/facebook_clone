@@ -58,11 +58,6 @@ const StoryReels = () => {
           }}
           onClick={handleOpen}
         >
-          {/* <img
-            src="https://images.unsplash.com/photo-1624530460655-6ebd3f70ba36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8b3V0ZG9vciUyMGdpcmx8ZW58MHx8MHx8&w=1000&q=80"
-            alt=""
-            width="100%" 
-          />*/}
           <Avatar src="https://www.faceapp.com/static/img/content/compare/beard-example-before@3x.jpg" />
           <h4>Dinesh Sanwal</h4>
         </div>

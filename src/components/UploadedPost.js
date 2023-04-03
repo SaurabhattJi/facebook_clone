@@ -22,9 +22,13 @@ const UploadedPost = ({
   const [color, setColor] = useState(<ThumbUpOffAltIcon />);
   const [comment, setComment] = useState(Comments);
   const likeClick = () => {
-    setLike(like + 1);
-
-    setColor(<ThumbUpIcon />);
+    if (like === Like) {
+      setLike(like + 1);
+      setColor(<ThumbUpIcon />);
+    } else {
+      setLike(like - 1);
+      setColor(<ThumbUpOffAltIcon />);
+    }
   };
   const comntclick = () => {
     setComment(comment + 1);
@@ -61,7 +65,7 @@ const UploadedPost = ({
           </span>
         </div>
         <div className="upload__bottom__options">
-          <span style={{ display: "flex", gap: "5px" }} onClick={comntclick}>
+          <span style={{ display: "flex", gap: "5px" }}>
             <ChatBubbleOutlineIcon /> <p>{comment} Comment</p>
           </span>
         </div>
@@ -84,21 +88,23 @@ const UploadedPost = ({
           }}
           placeholder="Write a comment ..."
         />
-      </span>
 
-      {/* <button
-        type="submit"
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          margin: "auto",
-          outline: "none",
-          cursor: "pointer",
-        }}
-        onClick={comntclick}
-      >
-        Comment
-      </button> */}
+        <button
+          type="submit"
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            margin: "auto",
+            borderRadius: "10px",
+            outline: "none",
+            cursor: "pointer",
+            padding: "5px",
+          }}
+          onClick={comntclick}
+        >
+          Comment
+        </button>
+      </span>
     </div>
   );
 };

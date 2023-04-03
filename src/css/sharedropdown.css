@@ -18,13 +18,15 @@
   align-items: center;
 }
 .share_dropdown .share_dropdown_content {
+  width: 400px;
   position: absolute;
-  top: 80%;
+  bottom: 160%;
+  right: -80%;
   padding: 0 10px;
   font-weight: 500;
   background-color: white;
   border-radius: 10px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .share_dropdown .share_dropdown_content .share_dropdown_item {
   display: flex;
