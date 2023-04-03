@@ -1,11 +1,46 @@
 import React, { useState } from "react";
 import "../css/storyReel.css";
 import { Avatar, IconButton, Modal } from "@mui/material";
+import CloseIcon from "@mui/icons-material/Close";
 
 const StoryReels = () => {
+  const [open, setOpen] = useState(false);
+  const handleClose = () => {
+    setOpen(false);
+  };
+  const handleOpen = () => {
+    setTimeout(() => {
+      setOpen(true);
+    }, 0);
+  };
   return (
     <>
-      <div className="storyReel">
+      <Modal open={open} onClose={handleClose}>
+        <div
+          className="modal__pop"
+          style={{ margin: "20px auto", border: "none", outline: "none" }}
+        >
+          <form>
+            <div className="modal__heading">
+              <h3>Story</h3>
+              <IconButton onClick={handleClose}>
+                <CloseIcon />
+              </IconButton>
+            </div>
+            <div className="modal__header__top">
+              <Avatar src="https://yt3.ggpht.com/mScHxoIcIqbmM7tw3AxCtWRFfMexLTqlux7KBrMh6igywT9kd_thm7cHXvxQyZHfvgjcO3l6Ew=s108-c-k-c0x00ffffff-no-rj" />
+              <h4>Saurabh Bhatt</h4>
+            </div>
+
+            <img
+              src="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aHVtYW58ZW58MHx8MHx8&w=1000&q=80"
+              alt=""
+              width="100%"
+            />
+          </form>
+        </div>
+      </Modal>
+      <div className="storyReel" onClick={handleOpen}>
         <div
           className="story"
           style={{
@@ -21,6 +56,11 @@ const StoryReels = () => {
             backgroundImage: `url('https://images.unsplash.com/photo-1624530460655-6ebd3f70ba36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8b3V0ZG9vciUyMGdpcmx8ZW58MHx8MHx8&w=1000&q=80')`,
           }}
         >
+          {/* <img
+            src="https://images.unsplash.com/photo-1624530460655-6ebd3f70ba36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8b3V0ZG9vciUyMGdpcmx8ZW58MHx8MHx8&w=1000&q=80"
+            alt=""
+            width="100%" 
+          />*/}
           <Avatar src="https://www.faceapp.com/static/img/content/compare/beard-example-before@3x.jpg" />
           <h4>Dinesh Sanwal</h4>
         </div>
