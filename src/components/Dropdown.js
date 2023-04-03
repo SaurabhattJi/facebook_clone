@@ -24,25 +24,25 @@ const Dropdown = () => {
       {active && (
         <div className="dropdown_content">
           <div className="dropdown_item">
-            <IconButton>
+            <IconButton style={{ color: "black" }}>
               <SettingsIcon />
             </IconButton>
             Settings
           </div>
           <div className="dropdown_item">
-            <IconButton>
+            <IconButton style={{ color: "black" }}>
               <BookmarkBorderIcon />
             </IconButton>
             Favourites
           </div>
           <div className="dropdown_item">
-            <IconButton>
+            <IconButton style={{ color: "black" }}>
               <HistoryIcon />
             </IconButton>
             Memories
           </div>
           <div className="dropdown_item">
-            <IconButton>
+            <IconButton style={{ color: "black" }}>
               <LogoutIcon />
             </IconButton>
             Log Out

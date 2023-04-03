@@ -11,6 +11,7 @@ import { IoIosNotifications } from "react-icons/io";
 import { IoMdArrowDropdownCircle } from "react-icons/io";
 import { Avatar } from "@mui/material";
 import { BsShop } from "react-icons/bs";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -26,7 +27,7 @@ const Header = () => {
         </div>
       </div>
       <div className="header__middle">
-        <div className="header__option header__option--active">
+        {/* <div className="header__option header__option--active">
           <AiOutlineHome />
         </div>
         <div className="header__option">
@@ -40,7 +41,22 @@ const Header = () => {
         </div>
         <div className="header__option">
           <MdOutlineSportsEsports />
-        </div>
+        </div> */}
+        <Link to="/" className="header__option header__option--active">
+          <AiOutlineHome />
+        </Link>
+        <Link to="/video" className="header__option">
+          <MdOndemandVideo />
+        </Link>
+        <Link to="/shop" className="header__option">
+          <BsShop />
+        </Link>
+        <Link to="/Groups" className="header__option">
+          <HiUserGroup />
+        </Link>
+        <Link to="/sports" className="header__option">
+          <MdOutlineSportsEsports />
+        </Link>
       </div>
       <div className="header__right">
         <div className="icon">
