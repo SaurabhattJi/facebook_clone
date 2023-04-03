@@ -1,7 +1,8 @@
 import React from "react";
 import "../css/sidebar.css";
 import SidebarOptions from "./SidebarOptions";
-import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+
+import Dropdown from "./Dropdown";
 
 const Sidebar = () => {
   return (
@@ -30,7 +31,8 @@ const Sidebar = () => {
         src="https://www.facebook.com/rsrc.php/v3/yv/r/QAyfjudAqqG.png"
         title="Event"
       />
-      <SidebarOptions Icon={ExpandMoreIcon} title="See more" />
+
+      <Dropdown />
     </div>
   );
 };

@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+.dropdown {
+  width: 300px;
+  margin: 0 auto;
+  position: relative;
+  margin-left: 10px;
+}
+.dropdown .dropdown_btn {
+  padding: 10px;
+  background: transparent;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+.dropdown .dropdown_content {
+  position: absolute;
+  top: 110%;
+  padding: 10px;
+  font-weight: 500;
+}
+.dropdown .dropdown_content .dropdown_item {
+  display: flex;
+  align-items: center;
+  padding: 5px 15px;
+}
+.dropdown .dropdown_content .dropdown_item:hover {
+  background-color: rgb(211 211 211/31%);
+}

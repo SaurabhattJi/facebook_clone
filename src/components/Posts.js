@@ -2,11 +2,9 @@ import { Avatar, IconButton, Modal } from "@mui/material";
 import React, { useState } from "react";
 import "../css/post.css";
 import VideoCallIcon from "@mui/icons-material/VideoCall";
-// import AddToPhotosIcon from "@mui/icons-material/AddToPhotos";
 import EmojiEmotionsIcon from "@mui/icons-material/EmojiEmotions";
 import CloseIcon from "@mui/icons-material/Close";
 import PhotoLibraryIcon from "@mui/icons-material/PhotoLibrary";
-// import VideoCallIcon from "@mui/icons-material/VideoCall";
 
 const Posts = () => {
   const [open, setOpen] = useState(false);
@@ -15,6 +13,13 @@ const Posts = () => {
   };
   const handleOpen = () => {
     setOpen(true);
+  };
+  const uploadFileWithclick = () => {
+    document.getElementById("imageFile").click();
+  };
+  const postclick = (e) => {
+    e.preventDefault();
+    setOpen(false);
   };
 
   return (
@@ -43,12 +48,13 @@ const Posts = () => {
                 <h4>Add to your post</h4>
               </div>
               <div className="modal__footer__right">
-                <IconButton>
+                <IconButton onClick={uploadFileWithclick}>
                   <PhotoLibraryIcon
                     fontSize="large"
                     style={{ color: "lightgreen" }}
                   />
                 </IconButton>
+                <input type="file" id="imageFile" style={{ display: "none" }} />
                 <IconButton>
                   <VideoCallIcon fontSize="large" style={{ color: "red" }} />
                 </IconButton>
@@ -60,7 +66,12 @@ const Posts = () => {
                 </IconButton>
               </div>
             </div>
-            <input type="submit" value="Post" className="post_submit" />
+            <input
+              onClick={postclick}
+              type="submit"
+              value="Post"
+              className="post_submit"
+            />
           </form>
         </div>
       </Modal>
@@ -82,13 +93,16 @@ const Posts = () => {
             <VideoCallIcon style={{ color: "red" }} fontSize="large" />
             <p>Live Video</p>
           </div>
-          <div className="post__option">
-            <PhotoLibraryIcon
-              fontSize="large"
-              style={{ color: "lightgreen" }}
-            />
-            <p>Photo/Video</p>
-          </div>
+          <span onClick={uploadFileWithclick}>
+            <div className="post__option">
+              <PhotoLibraryIcon
+                fontSize="large"
+                style={{ color: "lightgreen" }}
+              />
+              <p>Photo/Video</p>
+              <input type="file" id="imageFile" style={{ display: "none" }} />
+            </div>
+          </span>
           <div className="post__option">
             <EmojiEmotionsIcon style={{ color: "#ffb100" }} fontSize="large" />
             <p>Feeling/Activity</p>

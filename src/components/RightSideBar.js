@@ -6,8 +6,6 @@ import NotificationsActiveIcon from "@mui/icons-material/NotificationsActive";
 import CurrencyRupeeIcon from "@mui/icons-material/CurrencyRupee";
 import VideoCallIcon from "@mui/icons-material/VideoCall";
 import SearchIcon from "@mui/icons-material/Search";
-import SidebarOptions from "./SidebarOptions";
-import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
 const RightSideBar = () => {
   return (
@@ -64,7 +62,6 @@ const RightSideBar = () => {
           <Avatar src="https://burst.shopifycdn.com/photos/dark-haired-man-in-brown-leather-jacket.jpg?width=1200&format=pjpg&exif=1&iptc=1" />
           <h4>Gaurav</h4>
         </div>
-        <SidebarOptions Icon={ExpandMoreIcon} title="See more" />
       </div>
     </div>
   );
