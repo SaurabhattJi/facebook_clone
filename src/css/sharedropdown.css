@@ -31,6 +31,7 @@
   align-items: center;
   padding: 5px 15px;
 }
-.dropdown .dropdown_content .dropdown_item:hover {
+.share_dropdown .share_dropdown_content .share_dropdown_item:hover {
+  border-radius: 10px;
   background-color: rgb(211 211 211/31%);
 }

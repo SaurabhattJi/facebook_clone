@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import "../css/sharedropdown.css";
-import BookmarkBorderIcon from "@mui/icons-material/BookmarkBorder";
 import { IconButton } from "@mui/material";
-import ShareIcon from "@mui/icons-material/Share";
-import WhatsAppIcon from "@mui/icons-material/WhatsApp";
+import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
+import ContentCopyIcon from "@mui/icons-material/ContentCopy";
 import ImportContactsIcon from "@mui/icons-material/ImportContacts";
+import Diversity1Icon from "@mui/icons-material/Diversity1";
+import SaveIcon from "@mui/icons-material/Save";
 
-const Dropdown = () => {
+const MoreDropdown = () => {
   const [active, setActive] = useState(false);
 
   return (
@@ -17,16 +18,15 @@ const Dropdown = () => {
           setActive(!active);
         }}
       >
-        <ShareIcon />
-        Share
+        <MoreHorizIcon />
       </div>
       {active && (
         <div className="share_dropdown_content">
           <div className="share_dropdown_item">
-            <IconButton style={{ color: "green" }}>
-              <WhatsAppIcon />
+            <IconButton style={{ color: "black" }}>
+              <SaveIcon />
             </IconButton>
-            Share on whatsapp
+            Save
           </div>
           <div className="share_dropdown_item">
             <IconButton style={{ color: "black" }}>
@@ -36,9 +36,15 @@ const Dropdown = () => {
           </div>
           <div className="share_dropdown_item">
             <IconButton style={{ color: "black" }}>
-              <BookmarkBorderIcon />
+              <ContentCopyIcon />
             </IconButton>
-            Favourites
+            Copy Link
+          </div>
+          <div className="share_dropdown_item">
+            <IconButton style={{ color: "skyBlue" }}>
+              <Diversity1Icon />
+            </IconButton>
+            Group
           </div>
         </div>
       )}
@@ -46,4 +52,4 @@ const Dropdown = () => {
   );
 };
 
-export default Dropdown;
+export default MoreDropdown;

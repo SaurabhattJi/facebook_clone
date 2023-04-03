@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import "../css/uploadedPost.css";
-import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
 import { Avatar, IconButton } from "@mui/material";
 import ThumbUpOffAltIcon from "@mui/icons-material/ThumbUpOffAlt";
 import PublicIcon from "@mui/icons-material/Public";
 import ChatBubbleOutlineIcon from "@mui/icons-material/ChatBubbleOutline";
-import ShareIcon from "@mui/icons-material/Share";
+
 import ThumbUpIcon from "@mui/icons-material/ThumbUp";
 import ShareDropdown from "../components/ShareDropdown";
+import MoreDropdown from "./MoreDropDown";
 
 const UploadedPost = ({
   photoURl,
@@ -42,7 +42,9 @@ const UploadedPost = ({
             </p>
           </div>
         </div>
-        <MoreHorizIcon />
+        <span>
+          <MoreDropdown />
+        </span>
       </div>
       <div className="upload__middle">
         <p>{msg}</p>
@@ -59,7 +61,7 @@ const UploadedPost = ({
           </span>
         </div>
         <div className="upload__bottom__options">
-          <span style={{ display: "flex" }}>
+          <span style={{ display: "flex", gap: "5px" }} onClick={comntclick}>
             <ChatBubbleOutlineIcon /> <p>{comment} Comment</p>
           </span>
         </div>

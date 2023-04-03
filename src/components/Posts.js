@@ -103,6 +103,7 @@ const Posts = () => {
               <input type="file" id="imageFile" style={{ display: "none" }} />
             </div>
           </span>
+
           <div className="post__option">
             <EmojiEmotionsIcon style={{ color: "#ffb100" }} fontSize="large" />
             <p>Feeling/Activity</p>
