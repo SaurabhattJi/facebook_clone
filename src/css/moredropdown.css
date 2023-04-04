@@ -32,6 +32,7 @@
   display: flex;
   align-items: center;
   padding: 5px 8px;
+  cursor: pointer;
 }
 .more_dropdown .more_dropdown_content .more_dropdown_item span {
   display: flex;

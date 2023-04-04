@@ -10,6 +10,7 @@ const ShopItem = () => {
         msg="I am selling my IPhone. #selling #newphone #iphone"
         Like={668}
         price={"25,000"}
+        Location={"Delhi"}
       />
       <Shop
         userName="Rohit Joshi"
@@ -18,6 +19,7 @@ const ShopItem = () => {
         msg="I am selling my brand new IPhone 13 Pro. #iphone13 #new #sell"
         Like={302}
         price={"60,000"}
+        Location={"Rohini,Delhi "}
       />
       <Shop
         userName="Rohit Joshi"
@@ -26,6 +28,8 @@ const ShopItem = () => {
         msg="Mountain bike is ready to sold. #bike #mountainbike #bikes #new"
         Like={52}
         price={"30,000"}
+        Location={"Noida "}
+
       />
       <Shop
         userName="Rohit Joshi"
@@ -35,6 +39,7 @@ const ShopItem = () => {
            #new #car #sell"
         Like={311}
         price={"1,30,000"}
+        Location={"Trilokpuri"}
       />
     </div>
   );

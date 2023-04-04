@@ -4,6 +4,7 @@ import "../../css/Games.css";
 const Gaming = ({ image, name, categories }) => {
   return (
     <>
+    <div className="main_card">
       <div className="card">
         <img src={image} alt="Games img" />
         <div className="card-body">
@@ -11,6 +12,7 @@ const Gaming = ({ image, name, categories }) => {
           <button className="card">Play Game</button>
           <p className="card-text">{categories}</p>
         </div>
+      </div>
       </div>
     </>
   );

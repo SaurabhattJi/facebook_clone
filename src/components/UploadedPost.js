@@ -6,8 +6,8 @@ import PublicIcon from "@mui/icons-material/Public";
 import ChatBubbleOutlineIcon from "@mui/icons-material/ChatBubbleOutline";
 
 import ThumbUpIcon from "@mui/icons-material/ThumbUp";
-import ShareDropdown from "../components/ShareDropdown";
-import MoreDropdown from "./MoreDropDown";
+import ShareDropdown from "../components/dropdownComponents/ShareDropdown";
+import MoreDropdown from "./dropdownComponents/MoreDropDown";
 
 const UploadedPost = ({
   photoURl,

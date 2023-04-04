@@ -6,8 +6,8 @@ import PublicIcon from "@mui/icons-material/Public";
 import ChatBubbleOutlineIcon from "@mui/icons-material/ChatBubbleOutline";
 
 import ThumbUpIcon from "@mui/icons-material/ThumbUp";
-import ShareDropdown from "../components/ShareDropdown";
-import MoreDropdown from "./MoreDropDown";
+import ShareDropdown from "./dropdownComponents/ShareDropdown";
+import MoreDropdown from "./dropdownComponents/MoreDropDown";
 
 const UploadVideo = ({
   photoURl,
@@ -54,7 +54,7 @@ const UploadVideo = ({
       <div className="upload__middle">
         <p>{msg}</p>
         {image && 
-        <iframe width={"560"} height={"315"} src={image} title="YouTube video player" frameborder={"0"} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe width={"560"} height={"415"} src={image} title="YouTube video player" frameBorder={"0"} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
         }
       </div>
       <div className="upload__bottom">

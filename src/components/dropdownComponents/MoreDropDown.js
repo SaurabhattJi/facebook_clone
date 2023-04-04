@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../css/moredropdown.css";
+import "../../css/moredropdown.css";
 import { IconButton } from "@mui/material";
 import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
 import NotificationsNoneOutlinedIcon from "@mui/icons-material/NotificationsNoneOutlined";
@@ -15,7 +15,7 @@ const MoreDropdown = () => {
     <div className="more_dropdown">
       <div
         className="more_dropdown_btn"
-        onClick={(e) => {
+        onClick={() => {
           setActive(!active);
         }}
       >

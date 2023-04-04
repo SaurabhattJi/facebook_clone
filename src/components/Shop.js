@@ -6,8 +6,8 @@ import PublicIcon from "@mui/icons-material/Public";
 // import ChatBubbleOutlineIcon from "@mui/icons-material/ChatBubbleOutline";
 
 import ThumbUpIcon from "@mui/icons-material/ThumbUp";
-import ShareDropdown from "../components/ShareDropdown";
-import MoreDropdown from "./MoreDropDown";
+import ShareDropdown from "../components/dropdownComponents/ShareDropdown";
+import MoreDropdown from "./dropdownComponents/MoreDropDown";
 import CurrencyRupeeIcon from "@mui/icons-material/CurrencyRupee";
 
 const UploadedPost = ({
@@ -18,6 +18,7 @@ const UploadedPost = ({
   msg,
   Like,
   price,
+  Location
 }) => {
   const [like, setLike] = useState(Like);
   const [color, setColor] = useState(<ThumbUpOffAltIcon />);
@@ -49,7 +50,8 @@ const UploadedPost = ({
       </div>
       <div className="upload__middle" style={{ cursor: "pointer" }}>
         <p>{msg}</p>
-        {image && <img src={image} width={"100%"} height={"400px"} alt="Pic" />}
+        <p>Location: <strong>{Location}</strong> </p>
+        {image && <img src={image} width={"100%"} height={"450px"} alt="Pic" />}
       </div>
       <div className="upload__bottom">
         <div className="upload__bottom__options">

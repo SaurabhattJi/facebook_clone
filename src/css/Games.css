@@ -1,13 +1,26 @@
+.main_card {
+  display: flex;
+  align-items: center;
+}
 .card {
   display: flex;
   align-items: center;
   margin: 20px;
   flex-direction: column;
 }
+.card img {
+  cursor: pointer;
+  transition: 0.6s;
+}
+.card img:hover {
+  transform: scale(1.02);
+}
+
 .card .card-body {
   margin-top: 20px;
 }
 .card .card-body h1 {
+  text-align: center;
   font-size: 25px;
   font-weight: bolder;
 }

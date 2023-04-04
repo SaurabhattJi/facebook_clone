@@ -2,7 +2,7 @@ import React from "react";
 import "../css/sidebar.css";
 import SidebarOptions from "./SidebarOptions";
 
-import Dropdown from "./Dropdown";
+import Dropdown from "./dropdownComponents/Dropdown";
 
 const Sidebar = () => {
   return (
@@ -21,7 +21,7 @@ const Sidebar = () => {
       />
       <SidebarOptions
         src="https://www.facebook.com/rsrc.php/v3/yD/r/mk4dH3FK0jT.png"
-        title="Grpups"
+        title="Groups"
       />
       <SidebarOptions
         src="https://www.facebook.com/rsrc.php/v3/yG/r/A1HlI2LVo58.png"
