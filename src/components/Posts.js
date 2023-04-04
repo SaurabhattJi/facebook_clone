@@ -5,9 +5,12 @@ import VideoCallIcon from "@mui/icons-material/VideoCall";
 import EmojiEmotionsIcon from "@mui/icons-material/EmojiEmotions";
 import CloseIcon from "@mui/icons-material/Close";
 import PhotoLibraryIcon from "@mui/icons-material/PhotoLibrary";
+// import  Picker  from "@emoji-mart/react";
+// import data from "@emoji-mart/data";
 
 const Posts = () => {
   const [open, setOpen] = useState(false);
+  // const [picker, setPicker] = useState(false);
   const handleClose = () => {
     setOpen(false);
   };
@@ -104,10 +107,13 @@ const Posts = () => {
             </div>
           </span>
 
-          <div className="post__option">
+          <div className="post__option"> 
             <EmojiEmotionsIcon style={{ color: "#ffb100" }} fontSize="large" />
             <p>Feeling/Activity</p>
           </div>
+          {/* <div className={picker ? "dis_block" : "dis_none"}>
+            <Picker data={data} previewPosition="none" />
+          </div> */}
         </div>
       </div>
     </>

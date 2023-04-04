@@ -50,6 +50,12 @@
 .post__option p {
   margin-left: 10px;
 }
+.dis_block {
+  display: block;
+}
+.dis_none {
+  display: none;
+}
 .modal__pop {
   top: 50%;
   background-color: #fff;

@@ -94,6 +94,7 @@
 }
 .icon {
   padding: 5px 10px;
+  cursor: pointer;
 }
 .icon svg {
   font-size: 22px;

@@ -27,10 +27,10 @@ const Sidebar = () => {
         src="https://www.facebook.com/rsrc.php/v3/yG/r/A1HlI2LVo58.png"
         title="Watch"
       />
-      <SidebarOptions
+      {/* <SidebarOptions
         src="https://www.facebook.com/rsrc.php/v3/yv/r/QAyfjudAqqG.png"
         title="Event"
-      />
+      /> */}
 
       <Dropdown />
     </div>

@@ -43,7 +43,7 @@ const UploadedPost = ({
         {image && <img src={image} width={"100%"} height={"450px"} alt="Pic" />}
       </div>
       <div className="uploadInfo">
-        <p>
+        <p style={{marginTop:"5px"}}>
           {timeStamp} <PublicIcon />
         </p>
       </div>

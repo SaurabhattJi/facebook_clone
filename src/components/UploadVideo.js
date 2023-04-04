@@ -64,7 +64,7 @@ const UploadVideo = ({
             style={{ display: "flex", alignItems: "center" }}
           >
             <IconButton>{color}</IconButton>
-            <p>{like} Likes</p>
+            <p>{like}K Likes</p>
           </span>
         </div>
         <div className="upload__bottom__options">
