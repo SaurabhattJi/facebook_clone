@@ -12,8 +12,14 @@ import { IoMdArrowDropdownCircle } from "react-icons/io";
 import { Avatar } from "@mui/material";
 import { BsShop } from "react-icons/bs";
 import { Link } from "react-router-dom";
+// import { useState } from "react";
 
 const Header = () => {
+  // const [menuIcon, setMenuIcon] = useState(false);
+  // const toggle = () => {
+  //   setMenuIcon(!menuIcon);
+  // };
+
   return (
     <div className="header">
       <div className="header__left">
@@ -26,23 +32,8 @@ const Header = () => {
           <input type="text" placeholder="Search here" />
         </div>
       </div>
-      <div className="header__middle">
-        {/* <div className="header__option header__option--active">
-          <AiOutlineHome />
-        </div>
-        <div className="header__option">
-          <MdOndemandVideo />
-        </div>
-        <div className="header__option">
-          <BsShop />
-        </div>
-        <div className="header__option">
-          <HiUserGroup />
-        </div>
-        <div className="header__option">
-          <MdOutlineSportsEsports />
-        </div> */}
-        <Link to="/" className="header__option header__option--active">
+      <div className="header__middle ">
+        <Link to="/" className={"header__option"}>
           <AiOutlineHome />
         </Link>
         <Link to="/video" className="header__option">

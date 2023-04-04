@@ -4,6 +4,10 @@ import Header from "./components/Header";
 import RightSideBar from "./components/RightSideBar";
 import Sidebar from "./components/Sidebar";
 import VideoSection from "./components/VideoSection";
+// import Shop from "./components/Shop";
+import Group from "./components/Group";
+import Gaming from "./components/Gaming";
+import ShopItem from "./components/ShopItem";
 
 function App() {
   return (
@@ -15,6 +19,9 @@ function App() {
           <Routes>
             <Route path="/" element={<Feed />} />
             <Route path="/video" element={<VideoSection />} />
+            <Route path="/shop" element={<ShopItem />} />
+            <Route path="/groups" element={<Group />} />
+            <Route path="/sports" element={<Gaming />} />
           </Routes>
           <RightSideBar />
         </div>
