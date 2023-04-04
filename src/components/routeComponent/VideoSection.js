@@ -1,6 +1,6 @@
 import React from "react";
-import "../css/feed.css";
-import UploadVideo from "./UploadVideo";
+import "../../css/feed.css";
+import UploadVideo from "../UploadVideo";
 
 const VideoSection = () => {
   return (

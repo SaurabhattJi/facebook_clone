@@ -1,6 +1,6 @@
 .feed {
   flex: 1;
-  padding: 30px 150px;
+  padding: 10px 150px;
   display: flex;
   flex-direction: column;
   max-width: 600px;

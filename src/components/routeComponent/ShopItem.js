@@ -1,5 +1,5 @@
 import React from "react";
-import Shop from "./Shop";
+import Shop from "../Shop";
 const ShopItem = () => {
   return (
     <div className="feed">

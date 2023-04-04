@@ -8,7 +8,7 @@ import PublicIcon from "@mui/icons-material/Public";
 import ThumbUpIcon from "@mui/icons-material/ThumbUp";
 import ShareDropdown from "../components/ShareDropdown";
 import MoreDropdown from "./MoreDropDown";
-import CurrencyRupeeIcon from '@mui/icons-material/CurrencyRupee';
+import CurrencyRupeeIcon from "@mui/icons-material/CurrencyRupee";
 
 const UploadedPost = ({
   photoURl,
@@ -30,7 +30,6 @@ const UploadedPost = ({
       setColor(<ThumbUpOffAltIcon />);
     }
   };
- 
 
   return (
     <div className="upload">
@@ -48,7 +47,7 @@ const UploadedPost = ({
           <MoreDropdown />
         </span>
       </div>
-      <div className="upload__middle">
+      <div className="upload__middle" style={{ cursor: "pointer" }}>
         <p>{msg}</p>
         {image && <img src={image} width={"100%"} height={"400px"} alt="Pic" />}
       </div>
@@ -73,19 +72,6 @@ const UploadedPost = ({
       </div>
       <span style={{ display: "flex" }}>
         <Avatar src="https://yt3.ggpht.com/mScHxoIcIqbmM7tw3AxCtWRFfMexLTqlux7KBrMh6igywT9kd_thm7cHXvxQyZHfvgjcO3l6Ew=s108-c-k-c0x00ffffff-no-rj" />
-        {/* <textarea
-          name=""
-          id="Comment"
-          rows="2"
-          style={{
-            display: "flex",
-            border: "none",
-            outline: "none",
-            width: "100%",
-            margin: "20px 10px",
-          }}
-          placeholder="Write a comment ..."
-        /> */}
 
         <button
           type="submit"
@@ -98,7 +84,6 @@ const UploadedPost = ({
             cursor: "pointer",
             padding: "5px",
           }}
-         
         >
           Buy this product
         </button>

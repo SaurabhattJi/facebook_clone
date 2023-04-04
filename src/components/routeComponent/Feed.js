@@ -1,8 +1,8 @@
 import React from "react";
-import "../css/feed.css";
-import StoryReels from "./StoryReels";
-import Posts from "./Posts";
-import UploadedPost from "./UploadedPost";
+import "../../css/feed.css";
+import StoryReels from "../StoryReels";
+import Posts from "../Posts";
+import UploadedPost from "../UploadedPost";
 
 const Feed = () => {
   return (

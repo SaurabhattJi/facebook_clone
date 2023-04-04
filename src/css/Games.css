@@ -1,0 +1,22 @@
+.card {
+  display: flex;
+  align-items: center;
+  margin: 20px;
+  flex-direction: column;
+}
+.card .card-body {
+  margin-top: 20px;
+}
+.card .card-body h1 {
+  font-size: 25px;
+  font-weight: bolder;
+}
+.card .card-body button {
+  border-radius: 10px;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+.card .card-body button:hover {
+  background-color: rgb(18, 163, 18);
+  color: #fff;
+}
