@@ -24,6 +24,9 @@
   height: 40px;
   margin-left: 20px;
 }
+.header__search svg {
+  padding: 0 10px;
+}
 .header__search input {
   border: none;
   outline: 0;
@@ -94,4 +97,55 @@
 }
 .icon svg {
   font-size: 22px;
+}
+@media screen and (max-width: 1024px) {
+  .header__option {
+    padding: 3px 20px;
+    font-size: 30px;
+    cursor: pointer;
+  }
+  .header__search {
+    margin-left: 0;
+  }
+  .header__info {
+    padding: 5px 5px;
+  }
+  .icon {
+    padding: 5px 5px;
+  }
+  .header__info h5 {
+    margin-right: 0px;
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header__right {
+    display: none;
+  }
+  .header__middle {
+    margin-right: 40px;
+  }
+}
+@media screen and (max-width: 426px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+  }
+  .header__left {
+    margin-bottom: 10px;
+  }
+  .header__middle {
+    margin-right: 0px;
+  }
+}
+@media screen and (max-width: 321px) {
+  .header__search input {
+    min-width: 100px;
+  }
+  .header__search {
+    padding: 0 8px;
+    height: 40px;
+    margin-right: 10px;
+    width: fit-content;
+  }
 }

@@ -112,3 +112,16 @@
   cursor: pointer;
   font-size: 16px;
 }
+@media screen and (max-width: 768px) {
+  .post__option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px 5px;
+  }
+}
+@media screen and (max-width: 426px) {
+  .modal__pop {
+    width: fit-content;
+  }
+}

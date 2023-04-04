@@ -31,3 +31,14 @@
 .dropdown .dropdown_content .dropdown_item:hover {
   background-color: rgb(211 211 211/31%);
 }
+@media screen and (max-width: 1024px) {
+  .dropdown .dropdown_btn {
+    padding: 0;
+  }
+  .dropdown .dropdown_content {
+    padding: 0px;
+  }
+  .dropdown .dropdown_content .dropdown_item {
+    padding: 0 15px;
+  }
+}

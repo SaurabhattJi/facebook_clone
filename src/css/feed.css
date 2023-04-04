@@ -5,3 +5,32 @@
   flex-direction: column;
   max-width: 600px;
 }
+@media screen and (max-width: 1024px) {
+  .feed {
+    padding: 10px 100px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .feed {
+    padding: 10px 10px;
+    max-width: 400px;
+  }
+}
+@media screen and (max-width: 426px) {
+  .feed {
+    padding: 10px 10px;
+    max-width: 400px;
+  }
+}
+@media screen and (max-width: 376px) {
+  .feed {
+    padding: 10px 10px;
+    max-width: 360px;
+  }
+}
+@media screen and (max-width: 321px) {
+  .feed {
+    padding: 10px 10px;
+    max-width: 310px;
+  }
+}

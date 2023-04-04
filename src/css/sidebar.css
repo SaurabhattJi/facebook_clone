@@ -5,3 +5,8 @@
   top: 0;
   cursor: pointer;
 }
+@media screen and (max-width: 426px) {
+  .sidebar {
+    display: none;
+  }
+}

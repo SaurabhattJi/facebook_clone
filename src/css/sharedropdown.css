@@ -37,3 +37,10 @@
   border-radius: 10px;
   background-color: rgb(211 211 211/31%);
 }
+@media screen and (max-width: 1024px) {
+  .share_dropdown .share_dropdown_content {
+    width: 300px;
+    bottom: 160%;
+    right: -15%;
+  }
+}

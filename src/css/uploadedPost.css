@@ -45,3 +45,31 @@
   align-items: center;
   cursor: pointer;
 }
+iframe {
+  width: 560px;
+  height: 415px;
+}
+@media screen and (max-width: 768px) {
+  iframe {
+    width: 380px;
+    height: 350px;
+  }
+}
+@media screen and (max-width: 426px) {
+  iframe {
+    width: 380px;
+    height: 350px;
+  }
+}
+@media screen and (max-width: 376px) {
+  iframe {
+    width: 340px;
+    height: 350px;
+  }
+}
+@media screen and (max-width: 326px) {
+  iframe {
+    width: 295px;
+    height: 350px;
+  }
+}

@@ -36,7 +36,7 @@ const VideoSection = () => {
         }
       />
       <UploadVideo
-        image="https://www.youtube.com/embed/ArxRy5JNhlw"
+        image="https://www.youtube.com/embed/QV3ln7c2MUQ"
         userName="Jalaj"
         timeStamp="01:25 AM"
         Like={89}
