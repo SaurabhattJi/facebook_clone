@@ -9,6 +9,9 @@ import Group from "./components/routeComponent/Group";
 // import Gaming from "./components/routeComponent/Gaming";
 import ShopItem from "./components/routeComponent/ShopItem";
 import Games from "./components/routeComponent/Games";
+import LogIn from "./components/routeComponent/LogIn";
+import CovidInfo from "./components/sidenavbar/CovidInfo";
+import Friends from "./components/sidenavbar/Friends";
 
 function App() {
   return (
@@ -23,6 +26,9 @@ function App() {
             <Route path="/shop" element={<ShopItem />} />
             <Route path="/groups" element={<Group />} />
             <Route path="/sports" element={<Games />} />
+            <Route path="/logout" element={<LogIn />} />
+            <Route path="/covidinfo" element={<CovidInfo />} />
+            <Route path="/friends" element={<Friends />} />
           </Routes>
           <RightSideBar />
         </div>

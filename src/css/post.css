@@ -60,7 +60,7 @@
   top: 50%;
   background-color: #fff;
   margin: 0 auto;
-  width: 500px;
+  width: 400px;
   position: relative;
   transform: translateY(-50%);
   padding: 10px;
@@ -125,9 +125,12 @@
     align-items: center;
     padding: 5px 5px;
   }
+  .modal__pop {
+    width: 300px;
+  }
 }
 @media screen and (max-width: 426px) {
   .modal__pop {
-    width: fit-content;
+    width: 300px;
   }
 }

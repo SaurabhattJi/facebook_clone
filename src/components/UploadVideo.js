@@ -4,11 +4,11 @@ import { Avatar, IconButton } from "@mui/material";
 import ThumbUpOffAltIcon from "@mui/icons-material/ThumbUpOffAlt";
 import PublicIcon from "@mui/icons-material/Public";
 import ChatBubbleOutlineIcon from "@mui/icons-material/ChatBubbleOutline";
-
 import ThumbUpIcon from "@mui/icons-material/ThumbUp";
 import ShareDropdown from "./dropdownComponents/ShareDropdown";
 import MoreDropdown from "./dropdownComponents/MoreDropDown";
 
+// destructuring the props 
 const UploadVideo = ({
   photoURl,
   image,
@@ -17,17 +17,21 @@ const UploadVideo = ({
   msg,
   Like,
   Comments,
-  poster
 }) => {
+  // this useState is for like or dislike in video section 
   const [like, setLike] = useState(Like);
+
+  // this useState is for change the color of like button
   const [color, setColor] = useState(<ThumbUpOffAltIcon />);
   const [comment, setComment] = useState(Comments);
+
+  // this function is used for like functionaility +/- like
   const likeClick = () => {
     if (like === Like) {
-      setLike(like + 1);
+      setLike(like + 0.1);
       setColor(<ThumbUpIcon />);
     } else {
-      setLike(like - 1);
+      setLike(like - 0.1);
       setColor(<ThumbUpOffAltIcon />);
     }
   };
@@ -53,9 +57,15 @@ const UploadVideo = ({
       </div>
       <div className="upload__middle">
         <p>{msg}</p>
-        {image && 
-        <iframe  src={image} title="YouTube video player" frameBorder={"0"} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
-        }
+        {image && (
+          <iframe
+            src={image}
+            title="YouTube video player"
+            frameBorder={"0"}
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowFullScreen
+          ></iframe>
+        )}
       </div>
       <div className="upload__bottom">
         <div className="upload__bottom__options">
@@ -91,7 +101,8 @@ const UploadVideo = ({
           }}
           placeholder="Write a comment ..."
         />
-
+         
+         
         <button
           type="submit"
           style={{

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import "../../css/moredropdown.css";
 import { IconButton } from "@mui/material";
 import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
@@ -10,6 +10,12 @@ import CancelOutlinedIcon from "@mui/icons-material/CancelOutlined";
 
 const MoreDropdown = () => {
   const [active, setActive] = useState(false);
+  useEffect(() => {
+    let handler = () => {
+      setActive(false);
+    };
+    document.addEventListener("mousedown", handler);
+  });
 
   return (
     <div className="more_dropdown">

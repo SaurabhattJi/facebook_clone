@@ -24,7 +24,7 @@ const UploadedPost = ({
   const likeClick = () => {
     if (like === Like) {
       setLike(like + 1);
-      setColor(<ThumbUpIcon />);
+      setColor(<ThumbUpIcon style={{color:"#1877f2"}} />);
     } else {
       setLike(like - 1);
       setColor(<ThumbUpOffAltIcon />);

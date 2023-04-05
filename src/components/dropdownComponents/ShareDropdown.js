@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "../../css/sharedropdown.css";
 
 import { IconButton } from "@mui/material";
@@ -12,6 +12,13 @@ import NoteAltIcon from "@mui/icons-material/NoteAlt";
 
 const Dropdown = () => {
   const [active, setActive] = useState(false);
+
+  useEffect(() => {
+    let handler = () => {
+      setActive(false);
+    };
+    document.addEventListener("mousedown", handler);
+  });
 
   return (
     <div className="share_dropdown">

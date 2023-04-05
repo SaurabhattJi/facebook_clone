@@ -10,7 +10,7 @@
 }
 .card img {
   cursor: pointer;
-  transition: 0.6s;
+  transition: 0.5s;
 }
 .card img:hover {
   transform: scale(1.02);

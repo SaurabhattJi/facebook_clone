@@ -6,6 +6,7 @@ import BookmarkBorderIcon from "@mui/icons-material/BookmarkBorder";
 import HistoryIcon from "@mui/icons-material/History";
 import LogoutIcon from "@mui/icons-material/Logout";
 import { IconButton } from "@mui/material";
+import { Link } from "react-router-dom";
 
 const Dropdown = () => {
   const [active, setActive] = useState(false);
@@ -42,10 +43,15 @@ const Dropdown = () => {
             Memories
           </div>
           <div className="dropdown_item">
-            <IconButton style={{ color: "black" }}>
-              <LogoutIcon />
-            </IconButton>
-            Log Out
+            <Link
+              to="/logout"
+              style={{ textDecoration: "none", color: "black" }}
+            >
+              <IconButton style={{ color: "black" }}>
+                <LogoutIcon />
+              </IconButton>
+              Log Out
+            </Link>
           </div>
         </div>
       )}
