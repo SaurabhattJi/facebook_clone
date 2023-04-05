@@ -1,9 +1,9 @@
 .storyReel {
   display: flex;
-  z-index: 1;
+  z-index: 0;
   /* margin-top: 30px; */
 }
-.story {
+.storyReel .story {
   position: relative;
   cursor: pointer;
   background-position: center;

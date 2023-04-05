@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "../css/sidebar.css";
 // import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import SidebarOptions from "./SidebarOptions";
@@ -46,13 +46,19 @@ const Sidebar = () => {
   const showSidebar = () => {
     setSidebar(!sidebar);
   };
+  useEffect(() => {
+    // let handler = () => {
+    //   setSidebar(false);
+    // };
+    // document.addEventListener("mousedown", handler);
+  });
   return (
     <div className="sidebar">
       <span onClick={showSidebar}>
         <MenuIcon />
       </span>
 
-      <div className={sidebar ? " nav-menu active" : "nav-menu"}>
+      <div className={sidebar ? " side_menu active" : "side_menu"}>
         {SideBarData.map((item, i) => {
           return (
             <div key={i}>

@@ -17,7 +17,7 @@
   margin: 0 auto;
   padding-top: 20px;
 }
-.nav-menu {
+.side_menu {
   width: 410px;
   background-color: white;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
@@ -39,7 +39,7 @@
   z-index: 10;
 }
 
-.nav-menu.active {
+.side_menu.active {
   left: 0;
   transition: 450ms;
 }
@@ -52,15 +52,23 @@
   .sidebar span {
     width: 200px;
   }
-  .nav-menu {
+  .side_menu {
     width: 250px;
   }
 }
 @media screen and (min-width: 1024px) {
-  .nav-menu {
+  .side_menu {
     width: 300px;
   }
   .sidebar span {
     width: 250px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .side_menu {
+    width: 400px;
+  }
+  .sidebar span {
+    width: 350px;
   }
 }

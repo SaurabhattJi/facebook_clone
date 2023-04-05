@@ -77,7 +77,21 @@ const UploadedPost = ({
             padding: "5px",
           }}
         >
-          Buy this product
+          Buy Item
+        </button>
+        <button
+          type="submit"
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            margin: "auto",
+            borderRadius: "10px",
+            outline: "none",
+            cursor: "pointer",
+            padding: "5px",
+          }}
+        >
+          Remove Item
         </button>
       </span>
     </div>
