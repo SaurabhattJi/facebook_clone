@@ -13,13 +13,13 @@ import { Avatar } from "@mui/material";
 import { BsShop } from "react-icons/bs";
 import { Link } from "react-router-dom";
 // import { useState } from "react";
+// import MenuIcon from "@mui/icons-material/Menu";
 
 const Header = () => {
-  // const [menuIcon, setMenuIcon] = useState(false);
-  // const toggle = () => {
-  //   setMenuIcon(!menuIcon);
+  // const [sidebar, setSidebar] = useState(false);
+  // const showSidebar = () => {
+  //   setSidebar(!sidebar);
   // };
-
   return (
     <div className="header">
       <div className="header__left">
@@ -32,6 +32,7 @@ const Header = () => {
           <input type="text" placeholder="Search here" />
         </div>
       </div>
+     
       <div className="header__middle ">
         <Link to="/" className={"header__option"}>
           <AiOutlineHome />
@@ -62,6 +63,7 @@ const Header = () => {
         <div className="icon">
           <IoMdArrowDropdownCircle />
         </div>
+
         <div className="header__info">
           <Avatar src="https://yt3.ggpht.com/mScHxoIcIqbmM7tw3AxCtWRFfMexLTqlux7KBrMh6igywT9kd_thm7cHXvxQyZHfvgjcO3l6Ew=s108-c-k-c0x00ffffff-no-rj" />
           <h5>Saurabh Bhatt</h5>

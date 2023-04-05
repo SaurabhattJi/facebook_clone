@@ -8,7 +8,7 @@ import ThumbUpIcon from "@mui/icons-material/ThumbUp";
 import ShareDropdown from "./dropdownComponents/ShareDropdown";
 import MoreDropdown from "./dropdownComponents/MoreDropDown";
 
-// destructuring the props 
+// destructuring the props
 const UploadVideo = ({
   photoURl,
   image,
@@ -18,7 +18,7 @@ const UploadVideo = ({
   Like,
   Comments,
 }) => {
-  // this useState is for like or dislike in video section 
+  // this useState is for like or dislike in video section
   const [like, setLike] = useState(Like);
 
   // this useState is for change the color of like button
@@ -29,7 +29,7 @@ const UploadVideo = ({
   const likeClick = () => {
     if (like === Like) {
       setLike(like + 0.1);
-      setColor(<ThumbUpIcon />);
+      setColor(<ThumbUpIcon style={{ color: "#1877f2" }} />);
     } else {
       setLike(like - 0.1);
       setColor(<ThumbUpOffAltIcon />);
@@ -101,8 +101,7 @@ const UploadVideo = ({
           }}
           placeholder="Write a comment ..."
         />
-         
-         
+
         <button
           type="submit"
           style={{

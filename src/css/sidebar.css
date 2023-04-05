@@ -1,12 +1,66 @@
 .sidebar {
+  display: flex;
+  flex-direction: column;
   margin-top: 20px;
   flex: 0.33;
   position: sticky;
   top: 0;
   cursor: pointer;
 }
+.sidebar span {
+  cursor: pointer;
+  position: fixed;
+  z-index: 99;
+  width: 400px;
+  display: flex;
+  justify-content: flex-end;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+.nav-menu {
+  width: 410px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  position: fixed;
+  margin-top: 60px;
+  top: 0;
+  left: -100%;
+  transition: 850ms;
+  display: flex;
+  flex-direction: column;
+  /* flex: 0.33; */
+  top: 0;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.nav-menu.active {
+  left: 0;
+  transition: 450ms;
+}
 @media screen and (max-width: 426px) {
-  .sidebar {
-    display: none;
+  .sidebar span {
+    width: 200px;
+  }
+}
+@media screen and (max-width: 769px) {
+  .sidebar span {
+    width: 200px;
+  }
+  .nav-menu {
+    width: 250px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .nav-menu {
+    width: 300px;
+  }
+  .sidebar span {
+    width: 250px;
   }
 }

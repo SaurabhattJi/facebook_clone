@@ -42,17 +42,17 @@ const StoryReels = () => {
     setOpen(false);
   };
   const handleOpen = () => {
-    setTimeout(() => {
+    if (myPicData.id === myPicData.src) {
       setOpen(true);
-    }, 0);
+    }
   };
   return (
     <>
-      {myPicData.map((item, i) => {
+      {myPicData.map((item, i)=> {
         if (item.src === item.id)
           return (
-            <>
-              <Modal open={open} onClose={handleClose} key={i}>
+            <div key={i}>
+              <Modal open={open} onClose={handleClose}>
                 <div
                   className="modal__pop"
                   style={{
@@ -78,7 +78,7 @@ const StoryReels = () => {
                   </form>
                 </div>
               </Modal>
-            </>
+            </div>
           );
       })}
 

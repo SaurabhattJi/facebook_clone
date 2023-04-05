@@ -3,11 +3,8 @@ import "../css/uploadedPost.css";
 import { Avatar, IconButton } from "@mui/material";
 import ThumbUpOffAltIcon from "@mui/icons-material/ThumbUpOffAlt";
 import PublicIcon from "@mui/icons-material/Public";
-// import ChatBubbleOutlineIcon from "@mui/icons-material/ChatBubbleOutline";
-
 import ThumbUpIcon from "@mui/icons-material/ThumbUp";
 import ShareDropdown from "../components/dropdownComponents/ShareDropdown";
-// import MoreDropdown from "./dropdownComponents/MoreDropDown";
 import CurrencyRupeeIcon from "@mui/icons-material/CurrencyRupee";
 
 const UploadedPost = ({
@@ -25,7 +22,7 @@ const UploadedPost = ({
   const likeClick = () => {
     if (like === Like) {
       setLike(like + 1);
-      setColor(<ThumbUpIcon />);
+      setColor(<ThumbUpIcon style={{ color: "#1877f2" }} />);
     } else {
       setLike(like - 1);
       setColor(<ThumbUpOffAltIcon />);
@@ -34,7 +31,6 @@ const UploadedPost = ({
 
   return (
     <div className="upload">
-      
       <div className="upload__middle" style={{ cursor: "pointer" }}>
         <p>{msg}</p>
         <p>
@@ -43,7 +39,7 @@ const UploadedPost = ({
         {image && <img src={image} width={"100%"} height={"450px"} alt="Pic" />}
       </div>
       <div className="uploadInfo">
-        <p style={{marginTop:"5px"}}>
+        <p style={{ marginTop: "5px" }}>
           {timeStamp} <PublicIcon />
         </p>
       </div>

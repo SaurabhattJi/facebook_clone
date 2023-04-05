@@ -1,8 +1,13 @@
 import React from "react";
 import { Avatar } from "@mui/material";
 import SidebarOptions from "../SidebarOptions";
+import { Link } from "react-router-dom";
+// import { useParams } from "react-router-dom";
 
 const Friends = () => {
+  // const {id}= useParams()
+
+  
   return (
     <div className="feed">
       <h2 style={{ margin: "0 auto", display: "flex", alignItems: "center" }}>
@@ -11,16 +16,46 @@ const Friends = () => {
       </h2>
       <div className="right__body">
         <div className="right__body__options ">
-          <Avatar src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" />
-          <h4>Himanshu Dube</h4>
+          <Link
+            to="/friends:id"
+            style={{
+              display: "flex",
+              alignItems: "center",
+              textDecoration: "none",
+              color: "black",
+            }}
+          >
+            <Avatar src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" />
+            <h4>Himanshu Dube</h4>
+          </Link>
         </div>
         <div className="right__body__options ">
-          <Avatar src="https://thumbs.dreamstime.com/b/handsome-man-black-suit-white-shirt-posing-studio-attractive-guy-fashion-hairstyle-confident-man-short-beard-125019349.jpg" />
-          <h4>Kamlesh Joshi</h4>
+          <Link
+            to="/friends:id"
+            style={{
+              display: "flex",
+              alignItems: "center",
+              textDecoration: "none",
+              color: "black",
+            }}
+          >
+            <Avatar src="https://thumbs.dreamstime.com/b/handsome-man-black-suit-white-shirt-posing-studio-attractive-guy-fashion-hairstyle-confident-man-short-beard-125019349.jpg" />
+            <h4>Kamlesh Joshi</h4>
+          </Link>
         </div>
         <div className="right__body__options ">
-          <Avatar src="https://static.tnn.in/photo/97415915/97415915.jpg" />
-          <h4>Dinesh Sanwal</h4>
+          <Link
+            to="/friends:id"
+            style={{
+              display: "flex",
+              alignItems: "center",
+              textDecoration: "none",
+              color: "black",
+            }}
+          >
+            <Avatar src="https://static.tnn.in/photo/97415915/97415915.jpg" />
+            <h4>Dinesh Sanwal</h4>
+          </Link>
         </div>
         <div className="right__body__options ">
           <Avatar src="https://burst.shopifycdn.com/photos/dark-haired-man-in-brown-leather-jacket.jpg?width=1200&format=pjpg&exif=1&iptc=1" />
