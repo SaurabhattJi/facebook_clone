@@ -6,7 +6,7 @@ const VideoSection = () => {
   return (
     <div className="feed">
       <UploadVideo
-        image="https://www.youtube.com/embed/WzlO79d3S8c"
+        image="https://www.youtube.com/embed/6V37LCXuWaA"
         userName="Kamlesh Joshi"
         timeStamp="10:45 AM"
         Like={56}

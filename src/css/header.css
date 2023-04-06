@@ -153,3 +153,8 @@
     width: fit-content;
   }
 }
+@media screen and (max-width: 380px) {
+  .header__option {
+    padding: 3px 12px;
+  }
+}

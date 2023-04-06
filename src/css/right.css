@@ -48,11 +48,13 @@
 .right__header__right svg {
   margin: 0 10px;
 }
+.normalsidebar {
+  position: fixed;
+}
 @media screen and (max-width: 1024px) {
-  .right{
+  .right {
     display: none;
   }
 }
 @media screen and (max-width: 426px) {
-  
 }

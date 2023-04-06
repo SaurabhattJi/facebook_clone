@@ -5,11 +5,11 @@ import Dropdown from "./dropdownComponents/Dropdown";
 
 const NormalSidebar = () => {
   return (
-    <div className="normalsidebar" >
+    <div className="normalsidebar">
       <Link to={"/"} style={{ textDecoration: "none", color: "black" }}>
         <SidebarOptions
           src="https://yt3.ggpht.com/mScHxoIcIqbmM7tw3AxCtWRFfMexLTqlux7KBrMh6igywT9kd_thm7cHXvxQyZHfvgjcO3l6Ew=s108-c-k-c0x00ffffff-no-rj"
-          title="Saurabh BHatt"
+          title="Saurabh Bhatt"
         />
       </Link>
       <Link

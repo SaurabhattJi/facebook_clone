@@ -5,9 +5,14 @@
   flex-direction: column;
   max-width: 600px;
 }
+@media screen and (min-width: 1440px) {
+  .feed {
+    padding-left: 450px;
+  }
+}
 @media screen and (max-width: 1024px) {
   .feed {
-    padding: 10px 100px;
+    padding: 10px 350px;
   }
 }
 @media screen and (max-width: 768px) {

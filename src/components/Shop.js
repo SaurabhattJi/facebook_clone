@@ -6,6 +6,8 @@ import PublicIcon from "@mui/icons-material/Public";
 import ThumbUpIcon from "@mui/icons-material/ThumbUp";
 import ShareDropdown from "../components/dropdownComponents/ShareDropdown";
 import CurrencyRupeeIcon from "@mui/icons-material/CurrencyRupee";
+import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
+import RemoveShoppingCartIcon from "@mui/icons-material/RemoveShoppingCart";
 
 const UploadedPost = ({
   photoURl,
@@ -62,36 +64,14 @@ const UploadedPost = ({
           <ShareDropdown />
         </div>
       </div>
-      <span style={{ display: "flex" }}>
+      <span style={{ display: "flex", marginTop: "10px" }}>
         <Avatar src="https://yt3.ggpht.com/mScHxoIcIqbmM7tw3AxCtWRFfMexLTqlux7KBrMh6igywT9kd_thm7cHXvxQyZHfvgjcO3l6Ew=s108-c-k-c0x00ffffff-no-rj" />
 
-        <button
-          type="submit"
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            margin: "auto",
-            borderRadius: "10px",
-            outline: "none",
-            cursor: "pointer",
-            padding: "5px",
-          }}
-        >
-          Buy Item
+        <button className="buy_btn" type="submit">
+          <ShoppingCartIcon /> Buy Item
         </button>
-        <button
-          type="submit"
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            margin: "auto",
-            borderRadius: "10px",
-            outline: "none",
-            cursor: "pointer",
-            padding: "5px",
-          }}
-        >
-          Remove Item
+        <button className="rev_btn" type="submit">
+          <RemoveShoppingCartIcon /> Remove Item
         </button>
       </span>
     </div>
