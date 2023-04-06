@@ -24,4 +24,21 @@ code {
   height: 100vh;
   overflow-x: hidden;
   overflow-y: auto;
+  /* margin-left: 350px; */
+}
+@media screen and (max-width: 780px) {
+  .normalsidebar {
+    display: none;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .sidebar {
+    display: none;
+  }
+}
+@media screen and (max-width: 787px) {
+  .sidebar {
+    display: flex;
+    flex-direction: column;
+  }
 }

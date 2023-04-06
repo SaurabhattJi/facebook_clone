@@ -4,6 +4,7 @@ import StoryReels from "../StoryReels";
 import Posts from "../Posts";
 import UploadedPost from "../UploadedPost";
 
+
 const Feed = () => {
   return (
     <div className="feed">

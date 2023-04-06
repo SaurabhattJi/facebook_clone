@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 import Dropdown from "./dropdownComponents/Dropdown";
 import { Avatar } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
+// import NormalSidebar from "./NormalSidebar";
 
 export const SideBarData = [
   {
@@ -42,7 +43,7 @@ export const SideBarData = [
 ];
 
 const Sidebar = () => {
-  const [sidebar, setSidebar] = useState(true);
+  const [sidebar, setSidebar] = useState(false);
   const showSidebar = () => {
     setSidebar(!sidebar);
   };
@@ -53,26 +54,27 @@ const Sidebar = () => {
     // document.addEventListener("mousedown", handler);
   });
   return (
-    <div className="sidebar">
-      <span onClick={showSidebar}>
-        <MenuIcon />
-      </span>
+    <>
+      <div className="sidebar">
+        <span onClick={showSidebar}>
+          <MenuIcon />
+        </span>
 
-      <div className={sidebar ? " side_menu active" : "side_menu"}>
-        {SideBarData.map((item, i) => {
-          return (
-            <div key={i}>
-              <Link
-                to={item.path}
-                style={{ textDecoration: "none", color: "black" }}
-              >
-                <SidebarOptions src={item.src} title={item.name} />
-              </Link>
-            </div>
-          );
-        })}
+        <div className={sidebar ? " side_menu active" : "side_menu"}>
+          {SideBarData.map((item, i) => {
+            return (
+              <div key={i}>
+                <Link
+                  to={item.path}
+                  style={{ textDecoration: "none", color: "black" }}
+                >
+                  <SidebarOptions src={item.src} title={item.name} />
+                </Link>
+              </div>
+            );
+          })}
 
-        {/* <Link
+          {/* <Link
         to={"/covidinfo"}
         style={{ textDecoration: "none", color: "black" }}
       >
@@ -99,14 +101,15 @@ const Sidebar = () => {
           title="Watch"
         />
       </Link> */}
-        {/* <SidebarOptions
+          {/* <SidebarOptions
         src="https://www.facebook.com/rsrc.php/v3/yv/r/QAyfjudAqqG.png"
         title="Event"
       /> */}
 
-        <Dropdown />
+          <Dropdown />
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 

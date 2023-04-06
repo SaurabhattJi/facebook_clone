@@ -12,6 +12,7 @@ import { IoMdArrowDropdownCircle } from "react-icons/io";
 import { Avatar } from "@mui/material";
 import { BsShop } from "react-icons/bs";
 import { Link } from "react-router-dom";
+import Sidebar from "../components/Sidebar";
 // import { useState } from "react";
 // import MenuIcon from "@mui/icons-material/Menu";
 
@@ -23,17 +24,21 @@ const Header = () => {
   return (
     <div className="header">
       <div className="header__left">
-        <img
-          src="https://1000logos.net/wp-content/uploads/2021/04/Facebook-logo.png"
-          alt="Logo"
-        />
+        <Link to="/">
+          <img
+            src="https://1000logos.net/wp-content/uploads/2021/04/Facebook-logo.png"
+            alt="Logo"
+          />
+        </Link>
+
         <div className="header__search">
           <BsSearch />
           <input type="text" placeholder="Search here" />
         </div>
       </div>
-     
+
       <div className="header__middle ">
+        <Sidebar />
         <Link to="/" className={"header__option"}>
           <AiOutlineHome />
         </Link>

@@ -1,7 +1,4 @@
 .sidebar {
-  display: flex;
-  flex-direction: column;
-  margin-top: 20px;
   flex: 0.33;
   position: sticky;
   top: 0;
@@ -9,13 +6,12 @@
 }
 .sidebar span {
   cursor: pointer;
-  position: fixed;
+  /* position: fixed; */
   z-index: 99;
-  width: 400px;
+  /* width: 400px; */
   display: flex;
-  justify-content: flex-end;
-  margin: 0 auto;
-  padding-top: 20px;
+  align-items: center;
+  margin: auto auto;
 }
 .side_menu {
   width: 410px;
@@ -44,14 +40,11 @@
   transition: 450ms;
 }
 @media screen and (max-width: 426px) {
-  .sidebar span {
-    width: 200px;
+  .side_menu.active {
+    top: 45px;
   }
 }
 @media screen and (max-width: 769px) {
-  .sidebar span {
-    width: 200px;
-  }
   .side_menu {
     width: 250px;
   }
@@ -60,15 +53,9 @@
   .side_menu {
     width: 300px;
   }
-  .sidebar span {
-    width: 250px;
-  }
 }
 @media screen and (min-width: 1440px) {
   .side_menu {
     width: 400px;
-  }
-  .sidebar span {
-    width: 350px;
   }
 }

@@ -16,6 +16,7 @@ const UploadedPost = ({
   msg,
   Like,
   Comments,
+  id,
 }) => {
   const [like, setLike] = useState(Like);
   const [color, setColor] = useState(<ThumbUpOffAltIcon />);
@@ -64,7 +65,7 @@ const UploadedPost = ({
           </span>
         </div>
         <div className="upload__bottom__options">
-          <span style={{ display: "flex", gap: "5px" }}>
+          <span style={{ display: "flex", gap: "3px" }}>
             <ChatBubbleOutlineIcon /> <p>{comment} Comment</p>
           </span>
         </div>

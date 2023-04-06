@@ -2,7 +2,7 @@ import { Route, Routes } from "react-router-dom";
 import Feed from "./components/routeComponent/Feed";
 import Header from "./components/Header";
 import RightSideBar from "./components/RightSideBar";
-import Sidebar from "./components/Sidebar";
+// import Sidebar from "./components/Sidebar";
 import VideoSection from "./components/routeComponent/VideoSection";
 // import Shop from "./components/Shop";
 import Group from "./components/routeComponent/Group";
@@ -13,6 +13,7 @@ import LogIn from "./components/routeComponent/LogIn";
 import CovidInfo from "./components/sidenavbar/CovidInfo";
 import Friends from "./components/sidenavbar/Friends";
 import DetailsFriends from "./components/sidenavbar/DetailsFriends";
+import NormalSidebar from "./components/NormalSidebar";
 
 function App() {
   return (
@@ -20,7 +21,8 @@ function App() {
       <div className="App">
         <Header />
         <div className="app__body">
-          <Sidebar />
+          {/* <Sidebar /> */}
+          <NormalSidebar />
           <Routes>
             <Route path="/" element={<Feed />} />
             <Route path="/video" element={<VideoSection />} />

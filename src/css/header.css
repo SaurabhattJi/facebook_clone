@@ -140,6 +140,9 @@
   }
 }
 @media screen and (max-width: 321px) {
+  .header__option {
+    padding: 3px 13px;
+  }
   .header__search input {
     min-width: 100px;
   }
