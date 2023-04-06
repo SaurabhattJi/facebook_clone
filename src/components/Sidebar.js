@@ -42,7 +42,7 @@ export const SideBarData = [
 ];
 
 const Sidebar = () => {
-  const [sidebar, setSidebar] = useState(false);
+  const [sidebar, setSidebar] = useState(true);
   const showSidebar = () => {
     setSidebar(!sidebar);
   };

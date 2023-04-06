@@ -10,7 +10,7 @@ import FlagIcon from "@mui/icons-material/Flag";
 import GroupsIcon from "@mui/icons-material/Groups";
 import NoteAltIcon from "@mui/icons-material/NoteAlt";
 
-const Dropdown = () => {
+const Dropdown = ({name}) => {
   const [active, setActive] = useState(false);
 
   useEffect(() => {
@@ -29,7 +29,7 @@ const Dropdown = () => {
         }}
       >
         <ShareIcon />
-        Share
+       {name}
       </div>
       {active && (
         <div className="share_dropdown_content">

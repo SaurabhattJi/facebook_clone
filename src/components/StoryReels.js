@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import "../css/storyReel.css";
 import { Avatar, IconButton, Modal } from "@mui/material";
 import CloseIcon from "@mui/icons-material/Close";
+import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
+import ShareDropdown from "../components/dropdownComponents/ShareDropdown";
+import FavoriteIcon from "@mui/icons-material/Favorite";
 
 const myPicData = [
   {
@@ -19,89 +22,105 @@ const myPicData = [
   {
     id: 3,
     name: "Kamlesh Joshi",
-    img: "https://images.unsplash.com/photo-1620553967899-7b24032a3b6f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8aGlnaCUyMGxldmVsfGVufDB8fDB8fA%3D%3D&w=1000&q=80",
+    img: "https://images.unsplash.com/photo-1534617580102-6342ca2bfd48?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGxvb2tpbmclMjBmb3J3YXJkfGVufDB8fDB8fA%3D%3D&w=1000&q=80",
     src: "https://media.glamour.com/photos/5a425fd3b6bcee68da9f86f8/master/w_2560%2Cc_limit/best-face-oil.png",
   },
   {
     id: 4,
     name: "Madhur Sanwal",
-    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3SDbn1J4d3ZdAOyr02NtcOtvXgv5IGuU6aET8Nw5C83N567w-XvMlU3VXWDGiK7nKdQM&usqp=CAU",
+    img: "https://media.istockphoto.com/id/528421708/photo/portrait-and-sunset-at-the-beach.jpg?s=612x612&w=0&k=20&c=4SZ2tHAJPTyNyy0u0LuK3NuCbPjvM0gyrgWNsr8N8_M=",
     src: "https://cdn11.bigcommerce.com/s-x49po/images/stencil/1280x1280/products/75509/115579/1632657863085_IMG_20210210_120149__08277.1632992234.jpg?c=2",
   },
   {
     id: 5,
     name: "Gaurav",
-    img: "https://images.unsplash.com/photo-1675788555085-d244c05f1d10?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXRodW1ibmFpbHx8ZW16R0ZSV252X0F8fGVufDB8fHx8&auto=format&fit=crop&w=420&q=60",
+    img: "https://media.gettyimages.com/id/1252680368/photo/portrait-of-man-in-snow-having-none-of-it.jpg?s=612x612&w=gi&k=20&c=zATKIRGwP2UIcTZ7JaAkB7rf13naN9h2YbaZrTWuY1c=",
     src: "https://i0.wp.com/therighthairstyles.com/wp-content/uploads/2021/08/1-face-framing-highlights.jpg?fit=1080%2C1129&ssl=1",
   },
 ];
 
 const StoryReels = () => {
   const [open, setOpen] = useState(false);
-  const [id, setId] = useState([]);
+  const [pic, setPic] = useState([]);
+  const [like, setLike] = useState(<FavoriteBorderIcon />);
   const handleClose = () => {
     setOpen(false);
   };
+  const reelLike = () => {
+    
+    setLike(<FavoriteIcon style={{ color: "red" }} />);
+  };
 
   const handleStory = (id) => {
-    console.log("id", id);
+    // console.log("id", id);
     const value = myPicData.filter((h) => h.id === id);
-
-    console.log("value", value);
+    setPic(value);
+  };
+  const handleOpen = () => {
+    setOpen(true);
   };
 
   return (
-    <div style={{ display: "flex", marginRight: "60px" }}>
-      {myPicData.map((item, i) => {
+    <>
+      {pic?.map((elem, i) => {
         return (
-          <>
-            <div key={i}>
-              <Modal open={open} onClose={handleClose}>
-                <div
-                  className="modal__pop"
-                  style={{
-                    margin: "20px auto",
-                    border: "none",
-                    outline: "none",
-                    width: "300px",
-                  }}
-                >
-                  <form>
-                    <div className="modal__heading">
-                      <h3>Story</h3>
-                      <IconButton onClick={handleClose}>
-                        <CloseIcon />
-                      </IconButton>
-                    </div>
-                    <div className="modal__header__top">
-                      <Avatar src="https://yt3.ggpht.com/mScHxoIcIqbmM7tw3AxCtWRFfMexLTqlux7KBrMh6igywT9kd_thm7cHXvxQyZHfvgjcO3l6Ew=s108-c-k-c0x00ffffff-no-rj" />
-                      <h4>{item.name}</h4>
-                    </div>
-
-                    <img src={item.img} alt="" width="100%" />
-                  </form>
+          <Modal open={open} onClose={handleClose} key={i}>
+            <div
+              className="modal__pop"
+              style={{
+                margin: "20px auto",
+                border: "none",
+                outline: "none",
+                width: "350px",
+              }}
+            >
+              <form>
+                <div className="modal__heading">
+                  <h3>Story</h3>
+                  <IconButton onClick={handleClose}>
+                    <CloseIcon />
+                  </IconButton>
                 </div>
-              </Modal>
-            </div>
-
-            <div className="storyReel">
-              <div
-                className="story"
-                style={{
-                  backgroundImage: `url(${item.img})`,
-                }}
-                onClick={() => {
-                  handleStory(item.id);
-                }}
-              >
-                <Avatar src={item.src} />
-                <h4>{item.name}</h4>
+                <div className="modal__header__top">
+                  <Avatar src="https://yt3.ggpht.com/mScHxoIcIqbmM7tw3AxCtWRFfMexLTqlux7KBrMh6igywT9kd_thm7cHXvxQyZHfvgjcO3l6Ew=s108-c-k-c0x00ffffff-no-rj" />
+                  <h4>{elem.name}</h4>
+                </div>
+                <br />
+                <img src={elem.img} alt="" width="100%" />
+              </form>
+              <div className="likereel">
+                <IconButton onClick={reelLike}>{like}</IconButton>
+                <input type="text" placeholder="Write a Reply" />
+                <ShareDropdown name={""} />
               </div>
             </div>
-          </>
+          </Modal>
         );
       })}
-    </div>
+
+      <div style={{ display: "flex" }}>
+        {myPicData.map((item, i) => {
+          return (
+            <div className="storyReel" key={i}>
+              <div onClick={handleOpen}>
+                <div
+                  className="story"
+                  style={{
+                    backgroundImage: `url(${item.img})`,
+                  }}
+                  onClick={() => {
+                    handleStory(item.id);
+                  }}
+                >
+                  <Avatar src={item.src} />
+                  <h4>{item.name}</h4>
+                </div>
+              </div>
+            </div>
+          );
+        })}
+      </div>
+    </>
   );
 };
 

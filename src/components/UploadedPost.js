@@ -4,7 +4,6 @@ import { Avatar, IconButton } from "@mui/material";
 import ThumbUpOffAltIcon from "@mui/icons-material/ThumbUpOffAlt";
 import PublicIcon from "@mui/icons-material/Public";
 import ChatBubbleOutlineIcon from "@mui/icons-material/ChatBubbleOutline";
-
 import ThumbUpIcon from "@mui/icons-material/ThumbUp";
 import ShareDropdown from "../components/dropdownComponents/ShareDropdown";
 import MoreDropdown from "./dropdownComponents/MoreDropDown";
@@ -24,7 +23,7 @@ const UploadedPost = ({
   const likeClick = () => {
     if (like === Like) {
       setLike(like + 1);
-      setColor(<ThumbUpIcon style={{color:"#1877f2"}} />);
+      setColor(<ThumbUpIcon style={{ color: "#1877f2" }} />);
     } else {
       setLike(like - 1);
       setColor(<ThumbUpOffAltIcon />);
@@ -70,7 +69,7 @@ const UploadedPost = ({
           </span>
         </div>
         <div className="upload__bottom__options">
-          <ShareDropdown />
+          <ShareDropdown name={"Share"} />
         </div>
       </div>
       <span style={{ display: "flex" }}>

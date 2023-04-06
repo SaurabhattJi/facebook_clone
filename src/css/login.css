@@ -1,0 +1,29 @@
+.login_wrapper {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+.login_wrapper .login img {
+  width: 200px;
+}
+.login {
+  width: 400px;
+  margin: 0 auto;
+  background-color: rgb(233, 233, 233);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+.login h2 {
+  margin: 20px 0;
+}
+.login span {
+  background-color: #1778f2;
+  border: 0;
+  outline: 0;
+  color: #fff;
+  font-size: 16px;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
