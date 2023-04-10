@@ -47,6 +47,7 @@
 @media screen and (max-width: 769px) {
   .side_menu {
     width: 250px;
+    top: -60px;
   }
 }
 @media screen and (min-width: 1024px) {
