@@ -9,7 +9,7 @@ import { IconButton } from "@mui/material";
 import { Link } from "react-router-dom";
 
 const Dropdown = () => {
-  const [active, setActive] = useState(false);
+  const [active, setActive] = useState(true);
 
   return (
     <div className="dropdown">

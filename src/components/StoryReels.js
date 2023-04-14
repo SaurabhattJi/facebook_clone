@@ -5,6 +5,7 @@ import CloseIcon from "@mui/icons-material/Close";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import ShareDropdown from "../components/dropdownComponents/ShareDropdown";
 import FavoriteIcon from "@mui/icons-material/Favorite";
+// import Slider from "react-slick";
 
 const myPicData = [
   {
@@ -38,7 +39,13 @@ const myPicData = [
     src: "https://i0.wp.com/therighthairstyles.com/wp-content/uploads/2021/08/1-face-framing-highlights.jpg?fit=1080%2C1129&ssl=1",
   },
 ];
-
+// const settings = {
+//   dots: true,
+//   infinite: true,
+//   speed: 500,
+//   slidesToShow: 3,
+//   slidesToScroll: 3,
+// };
 const StoryReels = () => {
   const [open, setOpen] = useState(false);
   const [pic, setPic] = useState([]);
@@ -47,7 +54,6 @@ const StoryReels = () => {
     setOpen(false);
   };
   const reelLike = () => {
-    
     setLike(<FavoriteIcon style={{ color: "red" }} />);
   };
 
@@ -82,8 +88,8 @@ const StoryReels = () => {
                   </IconButton>
                 </div>
                 <div className="modal__header__top">
-                  <Avatar src="https://yt3.ggpht.com/mScHxoIcIqbmM7tw3AxCtWRFfMexLTqlux7KBrMh6igywT9kd_thm7cHXvxQyZHfvgjcO3l6Ew=s108-c-k-c0x00ffffff-no-rj" />
-                  <h4>{elem.name}</h4>
+                  <Avatar src={elem.src} />
+                  <h4 style={{padding:"0 5px"}}>{elem.name}</h4>
                 </div>
                 <br />
                 <img src={elem.img} alt="" width="100%" />
@@ -99,6 +105,7 @@ const StoryReels = () => {
       })}
 
       <div style={{ display: "flex" }}>
+        {/* <Slider {...settings}> */}
         {myPicData.map((item, i) => {
           return (
             <div className="storyReel" key={i}>
@@ -119,6 +126,7 @@ const StoryReels = () => {
             </div>
           );
         })}
+        {/* </Slider> */}
       </div>
     </>
   );

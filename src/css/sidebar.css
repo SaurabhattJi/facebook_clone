@@ -42,11 +42,15 @@
 @media screen and (max-width: 426px) {
   .side_menu.active {
     top: 45px;
+    width: 250px;
   }
+  /* .sidebar.active.side_menu.header__left {
+    display: none;
+  } */
 }
 @media screen and (max-width: 769px) {
   .side_menu {
-    width: 250px;
+    width: 350px;
     top: -60px;
   }
 }

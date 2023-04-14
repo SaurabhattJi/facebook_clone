@@ -9,19 +9,29 @@
   align-items: center;
   border-radius: 10px;
   /* margin-left: 90px; */
-  margin: auto;
-  padding: 5px 20px;
+  /* margin: auto; */
+  padding: 5px 10px;
   cursor: pointer;
 }
 .upload .buy_btn {
-  background-color: #1877f2;
+  margin-right: 60px;
+  margin-left: 60px;
+  background-color: #30c33a;
+  color: #fff;
+}
+.upload .buy_btn:hover {
+  background-color: #196ddb;
   color: #fff;
 }
 .upload .rev_btn {
-  background-color: #bb2a2a;
+  background-color: #c12f2fda;
   color: #fff;
 }
-.upload .buy_btn .upload__top {
+.upload .rev_btn:hover {
+  background-color: #c12f2fec;
+  color: #fff;
+}
+.upload__top {
   display: flex;
   justify-content: space-between;
 }

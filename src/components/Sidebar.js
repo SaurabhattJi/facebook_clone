@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 import Dropdown from "./dropdownComponents/Dropdown";
 import { Avatar } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
+// import { BsSearch } from "react-icons/bs";
 // import NormalSidebar from "./NormalSidebar";
 
 export const SideBarData = [
@@ -48,10 +49,10 @@ const Sidebar = () => {
     setSidebar(!sidebar);
   };
   useEffect(() => {
-    // let handler = () => {
-    //   setSidebar(false);
-    // };
-    // document.addEventListener("mousedown", handler);
+    let handler = () => {
+      setSidebar(false);
+    };
+    document.addEventListener("mousedown", handler);
   });
   return (
     <>
@@ -61,6 +62,19 @@ const Sidebar = () => {
         </span>
 
         <div className={sidebar ? " side_menu active" : "side_menu"}>
+          {/* <div className="header__left">
+            <Link to="/">
+              <img
+                src="https://1000logos.net/wp-content/uploads/2021/04/Facebook-logo.png"
+                alt="Logo"
+              />
+            </Link>
+
+            <div className="header__search">
+              <BsSearch />
+              <input type="text" placeholder="Search here" />
+            </div>
+          </div> */}
           {SideBarData.map((item, i) => {
             return (
               <div key={i}>

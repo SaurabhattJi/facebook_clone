@@ -32,6 +32,15 @@ const CovidInfo = () => {
         larger respiratory droplets to smaller aerosols.
         <br />
         <br />
+        <a
+          href="https://www.who.int/health-topics/coronavirus#tab=tab_1"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Know more ↪
+        </a>
+        <br />
+        <br />
         <img
           src="https://d2v9ipibika81v.cloudfront.net/uploads/sites/71/coronavirus-Information.png"
           alt="Cobid"
