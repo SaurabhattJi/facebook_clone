@@ -1,3 +1,9 @@
+Hello there 👋,
+
+This is a Facebook-clone(Interactive) created by me.s
+This clone is responsive clone.
+It has some features are Like, Login/Logout, StoryReel Section, Responsive sidebar and many more.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

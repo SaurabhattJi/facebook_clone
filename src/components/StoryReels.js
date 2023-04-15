@@ -53,12 +53,15 @@ const StoryReels = () => {
   const handleClose = () => {
     setOpen(false);
   };
-  const reelLike = () => {
+  const reelLike = (id) => {
+    // const liked = myPicData.filter((a) => a.name === id);
+
+    // console.log(liked);
     setLike(<FavoriteIcon style={{ color: "red" }} />);
   };
 
   const handleStory = (id) => {
-    // console.log("id", id);
+    // console.log("id", id)
     const value = myPicData.filter((h) => h.id === id);
     setPic(value);
   };
@@ -89,13 +92,19 @@ const StoryReels = () => {
                 </div>
                 <div className="modal__header__top">
                   <Avatar src={elem.src} />
-                  <h4 style={{padding:"0 5px"}}>{elem.name}</h4>
+                  <h4 style={{ padding: "0 5px" }}>{elem.name}</h4>
                 </div>
                 <br />
                 <img src={elem.img} alt="" width="100%" />
               </form>
               <div className="likereel">
-                <IconButton onClick={reelLike}>{like}</IconButton>
+                <IconButton
+                  onClick={() => {
+                    reelLike(elem.name);
+                  }}
+                >
+                  {like}
+                </IconButton>
                 <input type="text" placeholder="Write a Reply" />
                 <ShareDropdown name={""} />
               </div>

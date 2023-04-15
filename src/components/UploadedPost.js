@@ -31,7 +31,13 @@ const UploadedPost = ({
     }
   };
   const comntclick = () => {
-    setComment(comment + 1);
+    if (comment === Comments) {
+      setComment(comment + 1);
+      document.getElementById("comment").innerHTML = "Undo Comment";
+    } else {
+      setComment(comment - 1);
+      document.getElementById("comment").innerHTML = "Comment";
+    }
   };
 
   return (
@@ -101,6 +107,7 @@ const UploadedPost = ({
             padding: "5px",
           }}
           onClick={comntclick}
+          id="comment"
         >
           Comment
         </button>
