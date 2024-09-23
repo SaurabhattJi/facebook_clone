@@ -2,7 +2,6 @@ import { Route, Routes } from "react-router-dom";
 import Feed from "./components/routeComponent/Feed";
 import Header from "./components/Header";
 import RightSideBar from "./components/RightSideBar";
-// import Sidebar from "./components/Sidebar";
 import VideoSection from "./components/routeComponent/VideoSection";
 // import Shop from "./components/Shop";
 import Group from "./components/routeComponent/Group";
